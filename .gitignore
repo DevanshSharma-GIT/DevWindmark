@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.venv
+venv
+__pycache__
+.pytest_cache
+*.pyc
+node_modules
+dist
+frontend/dist
+.vercel
+.idea
+.vscode
+backend/data/cache/.tmp*

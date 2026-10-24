@@ -1,0 +1,93 @@
+:root {
+  --bg: #000000;
+  --bg-elevated: #111111;
+  --text: #ffffff;
+  --muted: #8a8a8a;
+  --line: #262626;
+  --accent: #f4f4f4;
+  --danger: #d0d0d0;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 72px;
+  --max: 1180px;
+  --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin: 0 0 var(--space-2);
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+p {
+  margin: 0 0 var(--space-2);
+}
+
+button,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+}
+
+.skip-link:focus {
+  left: 16px;
+  z-index: 20;
+  background: var(--text);
+  color: var(--bg);
+  padding: 8px 12px;
+}

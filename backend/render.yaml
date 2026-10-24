@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: devwindmark-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: CORS_ORIGINS
+        sync: false
+      - key: DECISION_CUTOFF_TIME
+        value: "09:20"
+      - key: DECISION_TIMEZONE
+        value: Europe/London
+      - key: PYTHONPATH
+        value: /opt/render/project/src

@@ -1,0 +1,11 @@
+.chart-frame {
+  min-height: 300px;
+}
+
+.recharts-default-legend {
+  color: #cfcfcf !important;
+}
+
+.recharts-legend-item-text {
+  color: #cfcfcf !important;
+}
