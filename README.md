@@ -51,4 +51,4 @@ Deployment pending
 
 ## Acknowledgment
 
-AI tools, including GitHub Copilot, were used during development.
+AI tools, including GitHub Copilot, were used during development of Frontend and PPTs
